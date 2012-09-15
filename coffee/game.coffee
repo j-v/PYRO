@@ -28,7 +28,7 @@ Game.propogationConstant = 0.1
 Game.fireAnimationRate = 10 # frames per second
 Game.MaxFireLevel = 10
 Game.fireFadeRate = 0.4
-Game.regenerate = true
+Game.regenerate = false
 Game.regenerationConstant = 0.03
 Game.makeSmoke = true
 Game.smokeLikelihood = 0.2
@@ -56,7 +56,7 @@ Game.update = () ->
       delta = 10 * (elapsed/1000)
       smoke.x += delta
       if smoke.life <= 0
-        Game.smoke.splice i,1
+        Game.smoke.splice i,1 	# remove old smoke
     
   # regeneration
   if Game.regenerate and not Game.burnMode and not Game.won

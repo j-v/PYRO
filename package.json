@@ -1,11 +1,11 @@
 {
- "name": "pyro",
+ "name": "Pyro",
  "version": "0.0.1",
  "description": "The environmentally-unfriendly anti-social game", 
  "author": "Jon Volkmar <jonathonvolkmar@gmail.com>",
  "dependencies": {
    "express": "2.5.x",
-   "coffee-script": "1.2.x"
+   "coffee-script": "1.3.x"
  },
  "engine": "node >= 0.4.7"
 }
