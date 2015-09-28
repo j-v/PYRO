@@ -15,7 +15,7 @@ root.Cell = class Cell
     #fireLevel is the level of damge the fire is producing
     #celltype is and object of CellType
     constructor: (@celltype)->
-      @hp = celltype.maxHp
+      @hp = @celltype.maxHp
       @firelevel = 0
       #@fireLevelSprite = 0
 

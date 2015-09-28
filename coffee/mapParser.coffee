@@ -17,7 +17,7 @@ root.parseMap = (string) ->
     else if char == '$'
       firstRow = false   
       height = height + 1
-    else
+    else if char != ' ' # ignore spaces
       alert "Map had invalid format."
     if firstRow 
       width = width + 1
